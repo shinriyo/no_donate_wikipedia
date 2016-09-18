@@ -1,0 +1,25 @@
+{
+  "name": "No donate Wikipedia",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "icons": { "48": "icon48.png",
+            "128": "icon128.png" },
+  "description": "No donate Wikipedia.",
+  "browser_action" : {
+    // アイコン
+    "default_icon": "icon19.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+      {
+          // 特定のWebサイトに来たらキックする
+          "matches": [
+            "http://*.wikipedia.org/*",
+            "https://*.wikipedia.org/*"
+          ],
+          "js": ["jquery-3.1.0.min.js", "myscript.js"]
+      }
+  ]
+}
