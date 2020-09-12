@@ -15,6 +15,11 @@
       }
     };
     id = setInterval(remover, 200);
+
+    var frb = doc.getElementById("frb-inline");
+    if (frb) {
+      frb.style.display = 'none';
+    }
 　} else {
 　　doc.addEventListener("DOMContentLoaded", loadedListener, false);
 　}
