@@ -5,6 +5,8 @@ https://chrome.google.com/webstore/devconsole/bcd9057f-3da1-4d17-8831-c43853f9ba
 
 ```
 rm no_donate_wikipedia.pem
+cd ../
+zip no_donate_wikipedia.zip no_donate_wikipedia/*
 ```
 
 そしてzipする
