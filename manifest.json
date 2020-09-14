@@ -1,6 +1,6 @@
 {
   "name": "No donate Wikipedia",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifest_version": 2,
   "icons": { "48": "icon48.png",
             "128": "icon128.png" },

@@ -16,10 +16,15 @@
     };
     id = setInterval(remover, 200);
 
-    var frb = doc.getElementById("frb-inline");
-    if (frb) {
-      frb.style.display = 'none';
-    }
+
+    var id2;
+    var remover = function() {
+      $("#frb-inline").remove();
+      if($("#frb-inline").length == 1) {
+        clearInterval(id2);
+      }
+    };
+    id2 = setInterval(remover, 200);
 　} else {
 　　doc.addEventListener("DOMContentLoaded", loadedListener, false);
 　}
